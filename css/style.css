@@ -1,0 +1,10 @@
+#cookieCharts > section {
+  float: left;
+  background-color: beige;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
