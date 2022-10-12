@@ -12,3 +12,20 @@
 body{
   background-color: wheat; 
 }
+
+footer {
+  text-align: center;
+  position: fixed;
+  background-color: grey;
+  bottom: 0;
+  width: 100%;
+}
+
+td {
+  background-color: beige;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
