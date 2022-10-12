@@ -99,7 +99,6 @@ City.prototype.printList = function (city) {
   tr.appendChild(rowStart);
   //var initialization
   let hours = city.makeTimeArray(city);
-  console.log (hours);
   let dailyTotal = 0;
   let CPH = [];
   let blankCheck = 0;
@@ -108,14 +107,13 @@ City.prototype.printList = function (city) {
   for (let i = 0; i < hours.length; i++) {
     CPH[i] = Math.round(Math.floor(Math.random() * (city.max - city.min + 1) + city.min) * city.avg);
   }
-  console.log (CPH);
   //creates list items
   for (let i = 0; i < titleNum.length; i++) {
     if (hours[blankCheck] === titleNum[i]) {
       let listItem = document.createElement('td');
       listItem.textContent = `${CPH[blankCheck]}`;
       tr.appendChild(listItem);
-      blankCheck ++;
+      blankCheck++;
     } else {
       let listItem = document.createElement('td');
       listItem.textContent = '';
@@ -130,11 +128,11 @@ City.prototype.printList = function (city) {
   tr.appendChild(listItem);
 };
 
-function makeCity (cityName) {//eslint-disable-line
+function makeCity(cityName) {//eslint-disable-line
   let name = cityName;
-  let hourOpen =  parseInt(prompt('Hours open'));
+  let hourOpen = parseInt(prompt('Hours open'));
   let openMeridiem = prompt('Meridiem Open (a.m./p.m.)');
-  let hourClose =  parseInt(prompt('Hours Close'));
+  let hourClose = parseInt(prompt('Hours Close'));
   let closeMeridiem = prompt('Meridiem Close (a.m./p.m.)');
   let min = parseInt(prompt('Minimum Customers'));
   let max = parseInt(prompt('Maximum Customers'));
