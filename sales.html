@@ -5,25 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="stylesheet" href="css/reset.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <!-- Title and stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <title>Cookie Charts</title>
 </head>
 
 <body>
   <header>
-    <div>
+    <div class="titleContainer">
       <img src="img/salmon.png">
+      <section>
+        <h1>SALMON</h1>
+        <h2>COOKIES</h2>
+      </section>
     </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    </ul>
+    <div class="navContainer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
   </header>
+
   <main>
-    <div id="cookieCharts"></div>
-    <button href='#' onclick='makeCity(prompt(`New City Name`))'>make city</button>
+    <div class="tableContainer">
+      <h2>Sales Projections</h2>
+      <section id="cookieCharts"></section>
+      <button href='#' onclick='makeCity(prompt(`New City Name`))'>make city</button>
+    </div>
   </main>
+
   <footer>
     <p>Martin Hansen</p>
   </footer>

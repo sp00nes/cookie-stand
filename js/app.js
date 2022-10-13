@@ -16,7 +16,7 @@ let seattle = new City('Seattle', 6, 'a.m.', 7, 'p.m.', 23, 65, 6.3);
 let tokyo = new City('Tokyo', 6, 'a.m.', 7, 'p.m.', 3, 24, 1.2);
 let dubai = new City('Dubai', 6, 'a.m.', 7, 'p.m.', 23, 65, 6.3);
 let paris = new City('Paris', 6, 'a.m.', 7, 'p.m.', 11, 38, 3.7);
-let lima = new City('lima', 6, 'a.m.', 7, 'p.m.', 2, 16, 4.6);
+let lima = new City('Lima', 6, 'a.m.', 7, 'p.m.', 2, 16, 4.6);
 
 //table title and initialization
 let titleNum = ['1 a.m.', '2 a.m.', '3 a.m.', '4 a.m.', '5 a.m.', '6 a.m.', '7 a.m.', '8 a.m.', '9 a.m.', '10 a.m.', '11 a.m.', '12 a.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.', '9 p.m.', '10 p.m.', '11 p.m.'];
