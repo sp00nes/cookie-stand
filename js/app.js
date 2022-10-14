@@ -63,6 +63,7 @@ function mathArray(idArr, opp) {
   }
 }
 
+//prints footer
 function printFooter() {
   let totalTempArray = [];
   let table = document.querySelector('tFoot');
