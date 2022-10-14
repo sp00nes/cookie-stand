@@ -9,7 +9,8 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
   <!-- Title and stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -33,10 +34,45 @@
   </header>
 
   <main>
-    <div class="tableContainer">
+    <form id="makeCity">
+      <fieldset>
+        <legend>Create New City</legend>
+        <label>City Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>Hour Open:
+          <input type="number" name="hourOpen" required>
+        </label>
+        <label>Meridiem Open (a.m./p.m.):
+          <input type="text" name="meridOpen" required>
+        </label>
+        <label>Hour Close:
+          <input type="number" name="hourClose" required>
+        </label>
+        <label>Meridiem Open (a.m./p.m.):
+          <input type="text" name="meridClose" required>
+        </label>
+        <label>Minimum Customer:
+          <input type="number" name="minCust" required>
+        </label>
+        <label>Max Customer:
+          <input type="number" name="maxCust" required>
+        </label>
+        <label>Average Cookies Purchased:
+          <input type="number" name="avgCookie" required>
+        </label>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+    <div id="tableContainer">
       <h2>Sales Projections</h2>
-      <section id="cookieCharts"></section>
-      <button href='#' onclick='makeCity(prompt(`New City Name`))'>make city</button>
+      <section id="cookieCharts">
+        <table>
+          <thead></thead>
+          <tbody></tbody>
+          <tfoot id="tFoot"></tfoot>
+        </table>
+      </section>
     </div>
   </main>
 

@@ -55,11 +55,11 @@ header {
 }
 
 /*table style*/
-.tableContainer {
+#tableContainer {
   width: 100%;
 }
 
-.tableContainer h2 {
+#tableContainer h2 {
   font-size: 30px;
   margin: 6px 6px 6px 6px;
 }
@@ -77,10 +77,42 @@ header {
   padding: 6px 3px 6px 3px;
 }
 
-.tableContainer button {
+#tableContainer p {
+  width: 69px;
   border: 0px;
   background-color: beige;
   padding: 6px 16px 6px 16px;
+}
+
+#makeCity fieldset{
+  width: 25rem;
+  padding: 20px 10px 20px 10px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  flex-wrap: wrap; 
+  align-items: flex-start; 
+  font-size: 18px;
+  border: 3px;
+  border-style: solid;
+  background-color: beige;
+  border-color: black;
+}
+
+#makeCity fieldset label {
+  margin: 5px;
+}
+
+#makeCity fieldset button{ 
+  margin-top: 10px;
+}
+#makeCity fieldset label input[type=number] {
+  width: 3rem;
+}
+
+#makeCity fieldset label input[type=text]:focus {
+  background-color: lightblue;
 }
 
 /*location style*/
@@ -126,7 +158,7 @@ header {
 /*Footer style*/
 footer {
   box-sizing: border-box;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   text-align: center;
