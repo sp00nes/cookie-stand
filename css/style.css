@@ -22,12 +22,14 @@ header {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
+  color:rgb(61, 53, 57);
 }
 
 .titleContainer h2 {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
   font-size: 80px;
+  color:rgb(61, 53, 57);
 }
 
 /*style for nav*/
@@ -54,9 +56,15 @@ header {
   background-color: #111;
 }
 
+/* main style */
+main {
+  min-height: 100%;
+}
+
 /*table style*/
 #tableContainer {
-  width: 100%;
+  width: auto;
+  margin: 0px 10px 0px 10px;
 }
 
 #tableContainer h2 {
@@ -71,10 +79,12 @@ header {
 
 #cookieCharts table tr td {
   border: 3px;
-  font-size: 18px;
+  font-size: 20px;
   border-style: solid;
   border-color: black;
-  padding: 6px 3px 6px 3px;
+  padding: 10px 0px 10px 3px;
+  font-family: 'Rubik', sans-serif;
+  color:rgb(184, 63, 63);
 }
 
 #tableContainer p {
@@ -118,7 +128,6 @@ header {
 /*location style*/
 .locationContainer {
   width: 100%;
-  height: 70px;
   display: flex;
   flex-direction: row; 
   justify-content: flex-start;
@@ -156,13 +165,66 @@ header {
   font-size: 20px;
 }
 
+/* img container Style*/
+.imgContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.imgContainer img {
+  margin: 3px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  flex-wrap: wrap; 
+  align-items: flex-start; 
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* divider style */
+.dividerContainer {
+  height: 18rem;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  flex-wrap: wrap; 
+  align-items: center; 
+}
+
+.line {
+  width: 20rem;
+  height: 0;
+  border: 1px solid #C4C4C4;
+  margin: 3px;
+  display:inline-block;
+}
+
+.divider {
+  display: inline-block;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Rubik', sans-serif;
+  color: rgb(141, 141, 141);
+}
+
+/* about style */
+.about {
+  font-size: 35px;
+}
+
 /*Footer style*/
 footer {
   box-sizing: border-box;
-  position: static;
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
-  height: 3rem;
+  height: 2rem;
+  margin-top: 2rem;
 }
